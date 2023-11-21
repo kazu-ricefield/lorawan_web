@@ -1,4 +1,4 @@
-function loadNavbar() {
+﻿function loadNavbar() {
     document.getElementById("navbar").innerHTML = `
         <ul>
             <li><a href="index.html">Home</a></li>

@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>３万円ではじめるLoRa WAN</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body onload="loadNavbar()">
+<div id="navbar"></div>
+<div id="content">
+<!-- コンテンツがここに入ります -->
+
+<h1>３万円ではじめるLoRa WAN</h1>
+<h2>LoRa WANとは？（用語集）</h2>
+
+<p>
+LoRaWANとは、小電力の無線を使い、センサーなどのデバイスをネットに繋げ、活用する凄いアーキテクチャのことです。
+LoRaWANの凄い点は、個人の有志によって支えられているネットワークインフラです。
+
+</p>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
