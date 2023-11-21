@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 36px; /* 文字の大きさ */
+    font-weight: bold; /* 文字の太さ */
+    color: #333333; /* 文字の色 */
+    margin-bottom: 20px; /* 下部のマージン */
+}
+
+h2 {
+    font-size: 24px; /* 文字の大きさ */
+    font-weight: bold; /* 文字の太さ */
+    color: #333333; /* 文字の色 */
+    margin-bottom: 15px; /* 下部のマージン */
+}
+
+p {
+    font-size: 16px; /* 文字の大きさ */
+    line-height: 1.6; /* 行の高さ */
+    color: #333333; /* 文字の色 */
+    margin-bottom: 10px; /* 下部のマージン */
+}
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -50px; /* メニューバーの高さと同じ値に設定 */
+    visibility: hidden;
+}
+
+.anchor + * {
+    margin-top: 50px; /* メニューバーの高さと同じ値に設定 */
+}
+
+
+#content {
+    margin: 20px 100px; /* 上下に20px、左右に100pxのマージン */
+    margin-top: 80px; /* メニューバーの高さに応じて調整 */
+}
+
+#navbar {
+    position: fixed; /* メニューバーを固定 */
+    top: 0; /* 上部からの位置 */
+    left: 0; /* 左端からの位置 */
+    width: 100%; /* 幅を全体に設定 */
+    z-index: 1000; /* 他の要素の上に表示 */
+    overflow: hidden;
+    background-color: #6495ed; /* メニューバーの色 */
+
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar li {
+    float: left;
+}
+
+#navbar li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+#navbar li a:hover, .dropdown:hover .dropbtn {
+    background-color: #b0c4de; /* メニューホバー色 */
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed; /* または 'absolute' */
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+#navbar .dropdown-content a {
+    color: grey; /* ここを変更してグレーに */
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block; /* これにより項目が縦に並びます */
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
