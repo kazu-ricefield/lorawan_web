@@ -11,6 +11,6 @@
                 </div>
             </li>
             <li><a href="links.html">Links</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="author.html">Author</a></li>
         </ul>`;
 }
