@@ -15,16 +15,22 @@
 <div id="content">
 <!-- コンテンツがここに入ります -->
 
-<h1>３万円ではじめるLoRa WAN</h1>
-<h2>LoRa WANとは？</h2>
+<h1>３万円ではじめるLoRaWAN</h1>
+<h2>LoRaWANとは？</h2>
 
 <p>
 　
-LoRaWANとは、LoRaという方式の小電力の無線を使い、センサーなどのデバイスをインターネットと接続し、活用可能にする凄いアーキテクチャのことです。
-
-</p>
+LoRaWANとは、LoRaという方式の小電力の無線を使い、センサーなどのデバイスをインターネットと接続し、活用可能にする凄いプラットフォームのことです。 
+<br>（ちなみに、プラットフォームとは、ハードウェア、ソフトウェア、サービスを総称した概念を指す言葉だそうです。）</p>
 	<p>
-	　LoRaWANの凄いところは、個人や企業、自治体など様々な方々の有志によってゲートウェイが設置し、これを公共インフラとして自由に相互利用するという新しい発想のネットワークインフラであるところです。</p>
+	　LoRaWANプラットフォームの凄い（と思う）ところは、個人や企業などの様々な人々の自由意志によって設置されたゲートウェイを共用し、公共インフラとして自由に相互利用するというところです。そしてこの公共インフラをビジネスで使うこともまったく問題としていません。簡単に言っちゃうと、フリーWi-Fiを個人があちこちで公開しているようなものですかね。</p>
+	<p>
+	　２０１５年にアムステルダムで始まったこのLoRaWANは、今ではヨーロッパ中を隙間なくカバーするほど公共ゲートウェイが普及しています。このLoRaWANの公共ゲートウェイは　TTN 
+	Mapper というサイトで世界のどこに公共ゲートウェイが使えるか分かるようになっています。</p>
+	<p>
+	　日本では TTN 
+	Mapperを見る限り、LoRaWANはあまり普及していないようです。このようなリソースのシェアは日本人の気質に合わないのでしょうか。TTN 
+	Mapperを見ると、各地域の一般人の文化レベルと何か関係があるような気もします。</p>
 <h2>LoRa WANに関する用語</h2>
 	<p>　LoRaWANの概要をつかむには、以下の用語を理解するのが手っ取り早いです。</p>
 	<p class="auto-style1">
@@ -33,17 +39,19 @@ LoRaWANとは、LoRaという方式の小電力の無線を使い、センサー
 	センシングデバイス（温度、湿度、照度、Co2、風速、電流、など）や、アクチュエータなどの信号を出力するデバイス、これ以外にもシリアル通信（RS-485）が可能なデバイスなど、用途に合わせた様々なデバイスがある。<br>
 	<br><strong>LoRa WAN ゲートウェイ</strong><br>エンドデバイスと無線（LoRa）通信し、ＩＰネットワークに接続する機器<br>
 	<br><strong>LoRa WAN　 (パブリックLoRa WAN)</strong><br>公共ゲートウェイ（個人の有志による設置）とThe 
-	Things Stack（ネットワークサーバー）を使って、構築されるネットワーク。<br>The Things Stack 
-	のサービスには、無償のCommunication Edition と、有償のCloud版がある。<br><br><strong>Private LoRa 
-	WAN</strong><br>私設設置のゲートウェイとネットワークサーバーで構築されるネットワーク<br><br><strong>Private 
+	Things Stack（ネットワークサーバー）を使って、構築されるネットワーク。<br><br><strong>Private LoRaWAN</strong><br>私設設置のゲートウェイとネットワークサーバーで構築されるネットワーク<br><br><strong>Private 
 	LoRa</strong><br>デバイス同士が直接LoRa（通信技術）を使って通信するものはこれにあたる。<br>Private LoRa 
 	WANを指して、Private LoRaと呼んでいる場合もあり、定義が曖昧なワード。<br><br><strong>The Things 
-	Network　(TTN)</strong><br>Lora WAN を使って、モノとネットワークが繋がるアーキテクチャを指す。<br>
+	Stack</strong><br>LoRaWANの公式ソフトウェアスタックで、ネットワークサーバーソフトウェア。<br>
+	無償のCommunication Edition と、有償のCloud Edition がある。<br><br><strong>The Things 
+	Network　(TTN)</strong><br>LoRa WAN を使って、モノとネットワークが繋がるプラットフォームを指す。<br>
 	したがって、The Things Stack Communication Edition と Cloud を指してThe Things Network 
 	と呼ぶこともできる。<br><br><strong>LoRa Alliance</strong><br>
 	LoRaWANプロトコルの開発、標準化を行う非営利団体で、オープンなグローバル標準としてLoRaWANの仕様を定義し、更新し、保守する責任を負っている。<br>
 	チップセットメーカー、センサー製造業者、システムインテグレーター、通信事業者、およびソフトウェア開発者などで構成されている。<br>
 	また、LoRaWAN製品の認証プログラムも運営し、製品が特定の品質基準と互換性基準を満たしていることを保証することで、エンドユーザーはLoRaWANテクノロジーを安心して使用できる。<br>
+	<br><strong>The Things Industries</strong><br>Lora Allianceのメンバー企業のひとつで、The 
+	Things Stack Cloud Edition を管理・運営している。<br>
 
 </p>
 
