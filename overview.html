@@ -1,21 +1,60 @@
 ﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <title>Web Page</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<title>３万円ではじめるLoRa WAN</title>
+<link rel="stylesheet" href="styles.css">
+<style type="text/css">
+.auto-style3 {
+	text-align: left;
+}
+.auto-style4 {
+	margin: 5px;
+}
+</style>
 </head>
 <body onload="loadNavbar()">
-    <div id="navbar"></div>
-    <div id="content">
-        <!-- コンテンツがここに入ります -->
+<div id="navbar"></div>
+<div id="content">
+<!-- コンテンツがここに入ります -->
 
-<h1>概要</h1>
+<h1>３万円ではじめるLoRaWAN</h1>
 <h2>この記事のゴール</h2>
-<p>本文</p>
-<h2>
 
-    </div>
-    <script src="script.js"></script>
+<p>
+１．自宅にLoRaWANゲートウェイを設置<br>２．温度・湿度センサーをLoRaWANのエンドデバイスとして登録<br>
+３．クラウド上に温度・湿度のグラフを表示させる
+	<br>
+【実際の測定データを表示しています】<br>
+<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2339689/charts/1?bgcolor=%23ffffff&color=%23d62020&days=1&dynamic=true&results=300&timescale=30&title=Temperature&type=line&yaxismax=25&yaxismin=0"></iframe>
+<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2339689/charts/2?bgcolor=%23ffffff&color=%230000ff&days=1&dynamic=true&results=300&timescale=30&title=Humidity&type=line&yaxismax=100&yaxismin=30"></iframe>
+
+</p>
+
+	<h2>
+	購入品</h2>
+	<p class="auto-style3">
+	<img alt="LoRaWANゲートウェイ" class="auto-style4" height="10%" src="images/41EIc1jG9AL._AC_SL1400_.jpg" style="float: left" width="10%"><br>
+	LoRaWANゲートウェイ　SenseCAP M2<br>メーカーリンク<br>
+	<a href="https://relshop.seeedstudio.com/SenseCAP-Multi-Platform-LoRaWAN-Indoor-Gateway-SX1302-AS923-p-5473.html" target="_blank">
+	https://relshop.seeedstudio.com/SenseCAP-Multi-Platform-LoRaWAN-Indoor-Gateway-SX1302-AS923-p-5473.html</a><br>
+	購入先<br><a href="https://akizukidenshi.com/catalog/top.aspx" target="_blank">
+	秋月電子通商</a><br>購入価格　\16,280（税込）　購入時期 2023.11<br><br>
+	</p>
+	<p class="auto-style3">
+	&nbsp;</p>
+	<p class="auto-style3">
+	<img alt="LoRaWAN温湿度計" height="15%" src="images/sens667.jpg" style="float: left" width="15%"><br>
+	LoRaWAN温湿度センサー　SenseCAP S2101<br>メーカーリンク<br>
+	<a href="https://www.seeedstudio.com/SenseCAP-S2101-LoRaWAN-Air-Temperature-and-Humidity-Sensor-p-5354.html" target="_blank">
+	https://www.seeedstudio.com/SenseCAP-S2101-LoRaWAN-Air-Temperature-and-Humidity-Sensor-p-5354.html</a><br>
+	購入先<br><a href="https://www.marutsu.co.jp/" target="_blank">マルツオンライン</a><br>
+	購入価格　\9,898（税込）　購入時期 2023.11<br><br>
+	</p>
+	<p>
+	購入したのは以上２点だけです。LoRaWANゲートウェイには、電源アダプタが同梱されていませんが、PoEでLANケーブルから給電可能です。PoE電源を持っていない場合はPoE内蔵のスイッチングハブかPoEインジェクタ、または電源アダプタを入手する必要があります。</p>
+
+</div>
+<script src="script.js"></script>
 </body>
 </html>

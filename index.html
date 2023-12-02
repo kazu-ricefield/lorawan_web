@@ -8,6 +8,16 @@
 .auto-style1 {
 	margin-left: 40px;
 }
+.auto-style2 {
+	margin: 5px;
+}
+.auto-style3 {
+	text-align: left;
+}
+.auto-style4 {
+	border-width: 0px;
+	margin: 5px;
+}
 </style>
 </head>
 <body onload="loadNavbar()">
@@ -25,18 +35,23 @@ LoRaWANとは、LoRaという小電力無線で、センサーなどのデバイ
 	<p>
 	　LoRaWANプラットフォームの凄い（と思う）ところは、個人や企業などの様々な人々の自由意志によって設置されたゲートウェイを共用し、公共インフラとして自由に相互利用するという点です。そしてこの公共インフラをビジネスで使うこともまったく問題とはなりません。簡単に言っちゃうと、フリーWi-Fiを個人があちこちで公開しているようなものですかね。もちろんちょっと違いますけど。</p>
 	<p>
-	　２０１５年にアムステルダムで始まったこのLoRaWANは、今ではヨーロッパ中を隙間なくカバーするほど公共ゲートウェイが普及しています。このLoRaWANの公共ゲートウェイは　<a href="https://ttnmapper.org/heatmap/" target="_blank">TTN 
-	Mapper </a>というサイトで世界のどこで公共ゲートウェイが使えるか地図で見られるようになっています。実際には位置情報を公開していないゲートウェイも存在するので、実際に利用可能な公共ゲートウェイはもっとたくさんあります。</p>
+	<a href="images/ttn_mapper.png" target="_blank">
+	<img alt="TTN Map" class="auto-style4" height="30%" src="images/ttn_mapper.png" style="float: right" width="30%"></a>　２０１５年にアムステルダムで始まったこのLoRaWANは、今ではヨーロッパ中を隙間なくカバーするほどの多くの公共ゲートウェイが存在しています。このLoRaWANの公共ゲートウェイは　<a href="https://ttnmapper.org/heatmap/" target="_blank">TTN 
+	Mapper </a>というサイトで世界中のゲートウェイの位置を確認できます。位置情報を公開していないゲートウェイもあるので、実際に利用可能な公共ゲートウェイはもっと多いようです。</p>
 	<p>
 	　日本では TTN 
 	Mapperを見る限り、LoRaWANはあまり普及していないようです。このようなリソースのシェアは日本人の気質に合わないのでしょうか。国や地域の文化や経済的なものなどと複雑な関係があるのでしょうが、個人的には少し残念な気がします。</p>
-	<p>
-	&nbsp;</p>
+	<h2>
+	LoRaWANのアーキテクチャ</h2>
+	<p class="auto-style3">
+	LoRaWANのアーキテクチャをイラストで示します。（<a href="https://www.thethingsnetwork.org/" target="_blank">The 
+	Things Network</a>より引用）<br>
+	<img alt="アーキテクチャ" class="auto-style2" height="80%" src="images/architecture.png" width="80%"></p>
 <h2>LoRa WANに関する用語</h2>
 	<p>　LoRaWANの概要をつかむには、以下の用語を理解するのが手っ取り早いです。</p>
 	<p class="auto-style1">
 	<strong>LoRa</strong><br>無線通信技術の一種<br>小電力、長距離、免許不要が特徴<br><br><strong>LoRa 
-	WAN エンドデバイス</strong><br>
+	WAN エンドデバイス（エンドノード）</strong><br>
 	センシングデバイス（温度、湿度、照度、Co2、風速、電流、など）や、アクチュエータなどの信号を出力するデバイス、これ以外にもシリアル通信（RS-485）が可能なデバイスなど、用途に合わせた様々なデバイスがある。<br>
 	<br><strong>LoRa WAN ゲートウェイ</strong><br>エンドデバイスと無線（LoRa）通信し、ＩＰネットワークに接続する機器<br>
 	<br><strong>LoRa WAN　 (パブリックLoRa WAN)</strong><br>公共ゲートウェイ（個人の有志による設置）とThe 
@@ -48,9 +63,9 @@ LoRaWANとは、LoRaという小電力無線で、センサーなどのデバイ
 	Network　(TTN)</strong><br>LoRa WAN を使って、モノとネットワークが繋がるプラットフォームを指す。<br>
 	したがって、The Things Stack Communication Edition と Cloud を指してThe Things Network 
 	と呼ぶこともできる。<br><br><strong>LoRa Alliance</strong><br>
-	LoRaWANプロトコルの開発、標準化を行う非営利団体で、オープンなグローバル標準としてLoRaWANの仕様を定義し、更新し、保守する責任を負っている。<br>
+	LoRaWANプロトコルの開発、標準化を行う非営利団体で、オープンなグローバル標準としてLoRaWANの仕様を定義、更新し、保守するLoRaWANエコシステムの中心的存在。<br>
 	チップセットメーカー、センサー製造業者、システムインテグレーター、通信事業者、およびソフトウェア開発者などで構成されている。<br>
-	また、LoRaWAN製品の認証プログラムも運営し、製品が特定の品質基準と互換性基準を満たしていることを保証することで、エンドユーザーはLoRaWANテクノロジーを安心して使用できる。<br>
+	また、LoRaWAN製品の認証プログラムも運営しており、製品が特定の品質基準と互換性基準を満たしていることを保証することで、エンドユーザーはLoRaWANテクノロジーを安心して使用できるようになっている。<br>
 	<br><strong>The Things Industries</strong><br>Lora Allianceのメンバー企業のひとつで、The 
 	Things Stack Cloud Edition を管理・運営している。<br>
 
