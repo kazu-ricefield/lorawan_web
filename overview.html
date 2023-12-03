@@ -11,6 +11,9 @@
 .auto-style4 {
 	margin: 5px;
 }
+.auto-style5 {
+	margin-left: 40px;
+}
 </style>
 </head>
 <body onload="loadNavbar()">
@@ -21,11 +24,32 @@
 <h1>３万円ではじめるLoRaWAN</h1>
 <h2>この記事のゴール</h2>
 
-<p>
-１．自宅にLoRaWANゲートウェイを設置<br>２．温度・湿度センサーをLoRaWANのエンドデバイスとして登録<br>
-３．クラウド上に温度・湿度のグラフを表示させる
-	<br>
-【実際の測定データを表示しています】<br>
+<p class="auto-style5">
+大まかな作業は次の１から３です。</p>
+	<p class="auto-style5">
+	<strong>
+	<img alt="TTN_Map_Shizuoka" class="auto-style4" height="522%" src="images/ttn_mapper_shizuoka.png" style="float: right" width="25%">１．自宅にLoRaWANゲートウェイを設置</strong><br>
+	　ゲートウェイを家庭内のLANに接続し、The Things Network 
+	(TTN)に登録します。これによって公共ゲートウェイを設置することになります。公共ゲートウェイは知らない第三者が使うこともできるゲートウェイです。屋外の良いロケーションにアンテナを設置した場合には数キロ圏内のデバイスがあなたのゲートウェイを使用できる可能性があります。室内設置ではせいぜい数百メートル圏内なので第三者が利用できる可能性は低いでしょう。<br>
+	TTNへの登録の中でゲートウェイの位置情報を公開する設定にすると、TTN 
+	Mapperの地図上にゲートウェイ位置情報が掲載されます。この中のひとつが今回私が設置した公共ゲートウェイです。<br>
+
+</p>
+	<p class="auto-style5">
+	<strong>２．温度・湿度センサーをLoRaWANのエンドデバイスとして登録</strong><br>
+	もしも、そばに公共ゲートウェイが設置されていれば、特に断りもなく、それを利用してエンドデバイスをTTNに接続し、それを利用することができます。しかしもちろん自分でゲートウェイを設置しましたので、これを使ってデバイスをインターネットに接続します。The 
+	Things Stack のコンソールでデバイスの認証などの設定を行います。<br>
+
+</p>
+	<p class="auto-style5">
+	<strong>３．クラウド上のアプリケーションサーバを利用し、温度・湿度のグラフを表示させる
+	</strong><br>
+	エンドデバイスが登録できたら、エンドデバイスが送信してくるデータ（ペイロード）を整えて、アプリケーションサーバにデータを渡し、グラフにプロットさせます。今回はThings 
+	Speakというアプリケーションサーバのサービスを利用しています。<br>
+
+</p>
+	<p class="auto-style5">
+【実際の測定データを表示しています】　<br>
 <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2339689/charts/1?bgcolor=%23ffffff&color=%23d62020&days=1&dynamic=true&results=300&timescale=30&title=Temperature&type=line&yaxismax=25&yaxismin=0"></iframe>
 <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2339689/charts/2?bgcolor=%23ffffff&color=%230000ff&days=1&dynamic=true&results=300&timescale=30&title=Humidity&type=line&yaxismax=100&yaxismin=30"></iframe>
 
